@@ -84,7 +84,7 @@ each teammate a role to play.
 \section{Problem Description \& Introduction}
 
 Although it`s hard to see under the human skin, it is necessary for evaluating blood perfusion.
-A typical use of inspecting Blood perfusion is to evaluate burn depth, which is important because wounds of different 
+A typical use of inspecting blood perfusion is to evaluate burn depth, which is important because wounds of different 
 burn depths require different treating methods, ranging from conservative to surgical. Clinical evaluation,
 mainly based on visual inspection, only ensures an accurate prognosis in 50-70\% cases \cite{Renkielska}. Histopathological
 assessment is an alternative choice. While it provides accurate results, it is invasive and requires taking multiple
@@ -113,8 +113,8 @@ Our result should be more accurate because we operate in a smaller temperature r
 spontaneous fluctuation of human body temperature.
 
 \section{Information Sources}
-Literature search is processed through webofknowledge.com, which contain plenty of research papers in all aspects. To do the
-search work, key words are required to tape in and constrain the related articles. Key words that used are as follow:
+Literature search is processed through webofknowledge.com, which contains plenty of research papers in all aspects. To do the
+search work, key words are required to tape in and constrain the related articles. Key words that are used are as follow:
 \\Title = (perfusion thermal imaging) or 
 \\Title = (burn depth thermal imaging) or
 \\Title = (laser Doppler imaging burn depth)
@@ -126,6 +126,7 @@ The distribution is as follow:
     \includegraphics[scale=1]{PIEY}
 	\caption{Published Items in Each Year}
 \end{figure}
+
 
 \section{Customer Requirements and Engineering Specifications}
 \subsection{Stakeholder Analysis \& Customer Requirements}
@@ -139,7 +140,7 @@ CR 2 & The cost should be within reasonable range. It should be affordable to us
 CR 3 & It should not require lots of medical procedures to diagnose the problem \\ \hline
 CR4 & It is better to be non-invasive.
 \end{tabular}
-\caption{Patients` Requirements}
+\caption{Patients' Requirements}
 \label{Patients CR}
 \end{table}
 
@@ -150,7 +151,7 @@ CR 1 & Primary concern: the fondness from the patients (all from the table above
 CR 2 & The cost to purchase the machine should be reasonable. Namely, there \\ &should be enough people that wants to use it to make it worthwhile. \\ \hline
 CR 3 &  It should be easy to train the medical personnel to use the machine and \\ & therefore the machines should be easy to operate. \\
 \end{tabular}
-\caption{Hospitals` Requirements}
+\caption{Hospitals' Requirements}
 \label{Hospitals CR}
 \end {table}
 
@@ -161,7 +162,7 @@ CR 1 & Primary concern: the fondness from the hospitals (all from the table abov
 CR 2 & It is not too expensive to purchase the parts to manufacture the device compared to existing solutions\\ \hline
 CR 3 & It should not need lots of man power to manufacture the device \\ \hline
 \end{tabular}
-\caption{Medical Device Providers` Requirements}
+\caption{Medical Device Providers' Requirements}
 \label{Medical Devices CR}
 \end {table}
 
@@ -174,14 +175,28 @@ QFD (Quality Function Deployment) is a method to transform user demands into des
 \hfill --John R. Hauser
 \end{quotation}
 
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=1]{qfd.png}
+	\caption{QFD graph}
+\end{figure}
+
+
 \subsubsection{Determine the weights for Customer Requirements}
 Once we got all the customer requirements, we started to rank them based on their importance. As a medical equipment, getting an accurate result is always the first goal. Thus we ranked it first, and then follows Inexpensive, Reliability, Non-invasive, Safety, Short data process time, Less data storage space and Easy to use.
 
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=1]{CRweight.jpg}
+	\caption{The Weights of Customer Requirements}
+\end{figure}
+According to this chart, accurate result is our first concern, so we should focus on the design process that can improve the accuracy of our product. Then we need to control the cost and reliability of the product which are the two other main requirements. After that, we would consider design our product to make it non-invasive, safety, short process time, less data storage space and easy to use, which we may have more freedom in making decision. To be clear, safety is important anyway, however in our case, our product is less likely to be unsafe, and so it’s just not our main concern. 
+
 \subsubsection{Benchmark the competitions against Customer Requirements}
-In our project, we take Laser Doppler Imaging and ADT with external heat source as our benchmarks. Laser Doppler Imaging is highly accurate and reliable but really expensive and need expert to operate, so it gets full scores in accurate result and reliability while gets poor scores in inexpensive and easy to use. As for ADT with external heat source, it�s relatively cheap and accurate, however, external heat source may made burnt patient suffer more, so it got poor scores in non-invasive and safety.
+In our project, we take Laser Doppler Imaging and ADT with external heat source as our benchmarks. Laser Doppler Imaging is highly accurate and reliable but really expensive and need expert to operate, so it gets full scores in accurate result and reliability while gets poor scores in inexpensive and easy to use. As for ADT with external heat source, it’s relatively cheap and accurate, however, external heat source may made burnt patient suffer more, so it got poor scores in non-invasive and safety.
 
 \subsubsection{Generate Engineering Specifications}
-Since we have already analyzed the customer requirements, the next step to develop our QFD is to specify the engineering specifications of our product. Cost was the first characteristic that came to our mind since we didn�t have throughout design plan of our product at beginning.  Then we started to find other corresponding engineering specifications. Since the weight of accurate result ranks first in customer requirements, we come up with EKG sensitivity, correctness of measurement, time till failure (Reliability), signal to noise ratio and sample frequency of EKG as relevant characteristics. After that, according to our design procedure, we come up with other engineering specifications, including the algorithmic time complexity, the algorithmic space complexity, Number of images produced, Interface Complexity and sample frequency of EKG.
+Since we have already analyzed the customer requirements, the next step to develop our QFD is to specify the engineering specifications of our product. Cost was the first characteristic that came to our mind since we didn’t have throughout design plan of our product at beginning.  Then we started to find other corresponding engineering specifications. Since the weight of accurate result ranks first in customer requirements, we come up with EKG sensitivity, correctness of measurement, time till failure (Reliability), signal to noise ratio and sample frequency of EKG as relevant characteristics. After that, according to our design procedure, we come up with other engineering specifications, including the algorithmic time complexity, the algorithmic space complexity, Number of images produced, Interface Complexity and sample frequency of EKG.
 
 \subsubsection{Cross Correlate Engineering Specifications}
 We want to cross correlate engineering specification because changing one engineering specification can affect others. Take cost as example, if we want to improve the sensitivity of EKG or the correctness of measurement, the cost of our product will increase correspondingly. The increase of cost is negative to us, so we assigned negative to the cross correlate between cost and sensitivity of EKG and correctness of measurement. And specifications like correctness of measurement and signal to noise ratio has positive relationship to each other, so we assigned strong positive between them. Then we fill the rest of correlate as well.
@@ -193,67 +208,23 @@ Here we come to the most important part of QFD. For each pair of a specification
 1 = weakly related. \\
 Take cost as example, we traced back to customer requirements, found that inexpensive and non-invasive were most corresponding to the cost, and less data storage space also had some relative. Thus we assigned inexpensive and non-invasive nine points corresponding to cost, and gave less data storage space a one. This is how we start fill this QFD chart. Then we followed the step to fill rest of chart, keeping in mind the every specification must have a strongly related customer requirement.
 \subsubsection{Importance Rating}
-After we finished the correlate Customer Requirements to Engineering Specifications part, we can come to the importance rating of specifications. This rating is based on correlation between Customer Requirements to Engineering Specifications, and relative importance is normalized row above. In our case, signal to noise ratio, cost and correctness of measurement are most important specifications on which we should pay most attention. Then follows EKG sensitivity, reliability, sample frequency of EKG and number of images produced. And the algorithmic time complexity and algorithmic space complexity turned out to be less important, where we can have more design freedom?
+After we finished the correlate Customer Requirements to Engineering Specifications part, we can come to the importance rating of specifications. This rating is based on correlation between Customer Requirements to Engineering Specifications, and relative importance is normalized row above. 
+
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=1]{zhentmfan.png}
+	\caption{The EnSpecifications}
+\end{figure}
+
+In our case, signal to noise ratio, cost and correctness of measurement are most important specifications on which we should pay most attention. Then follows EKG sensitivity, reliability, sample frequency of EKG and number of images produced. And the algorithmic time complexity and algorithmic space complexity turned out to be less important, where we can have more design freedom。
 \subsubsection{Set Targets for Engineering Specifications}
 Setting targets for Engineering Specifications that you just come up with is a kind of like brainstorm. We need to search for the present criteria to make our value reasonable, and also ensure its uniqueness to show our innovation. Thus, we set targets for our Engineering Specifications as following:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1]{egs}
-	\caption{The Engineering Specifications}
+	\includegraphics[scale=1]{target.png}
+	\caption{The Target Values}
 \end{figure}
-
-\subsection{Functional Requirements}
-Doman Objects: 
-\begin{enumerate}{\alph{enumi}}
-	\item EKG, a device we use to trigger the infra-red camera to take a set of samples
-	\item Infrared camera \cite{flir}
-	\item LabVIEW for data acquisition
-\end{enumerate}
-\begin{description}
-
-   \item[Basics - MVP] \hspace{1cm}
-   	\begin{itemize}
-   	\item[\textbf{A1}] Literature Research\\
-   	\hfill Verification: Have a basic understanding of the current technology and how it compares with what we are doing.
-	\item[\textbf{A2}] Making the EKG, wiring the circuits\\
-	\hfill Verification: Attach the EKG to oscilloscope, and it should give you a graph of the signal. Or LabVIEW program should generate a peak signal to indicate the heart beat, we should be able to see the electrical signal on the graph.
-   	\item[\textbf{A3}]  EKG should be working, and have a trigger signal once the heart beats.\\
-    	\hfill Verification: Same as above, and we should decrease the reaction time and maximize the trigger signal
-   	\item[\textbf{A4}]  EKG should be able to trigger the IR camera to get a series of images as the data source\\
-    	\hfill Verification: LabVIEW program should be able to get a sequence of data, and we should be able to see those images as they are generated.
-   	\item[\textbf{A5}]  Signal processing to reduce noise\\
-   	\hfill Verification: We should be able to observe that the signal to noise value increase
-	\item[\textbf{A6}] Software algorithm to quickly process the images. \\
-   	\hfill Verification: The end result should be one image of blood perfusion that describes the $\delta T$.   
-\end{itemize}
-  
-  \item[Addons] \hspace{1cm}
-  	\begin{itemize}
-   	\item[\textbf{A7}] Improve the sensitivity of EKG device\\
-	\hfill Verification: It should collect images faster as soon as it detects the pitch \\
-	\item[\textbf{A8}] Fast Algorithm: Improve the algorithm to reduce the time complexity and space complexity \\
-	\hfill Verification: This can be checked by adopting stress tests.
-	\item[\textbf{A9}] .Fast Processing: Asynchronous processing when the images are generated to reduce processing time.\\
-   	\hfill Verification: Processed images and data should be available even when the camera is still taking pictures.
-	\end{itemize}
-	
-  \item[Non-technical requirements]\hspace{1cm}
-  	\begin{itemize}
-	\item[\textbf{A10}] The device should be non-invasive when used on patients.
-	\hfill Clarification: The device should not apply a heat source to the patients to agitate the injury situation. And it should not require the doctors to perform surgery when making the judgement of the severity of the injury.
-	\end{itemize}
-\end{description}
-
-\subsubsection{Non-Functional Requirements}
- \begin{description}
-  	\item[Availability/Reliability:]
-	The device should be available for most of the time, and it should be reliable to provide an accurate result. However, the patient`s skin color is a major factor that might affect the device`s reliability. Patients with a light skin color will make the device generate more accurate result, since there will be less noise.
-	\item[Usability:]
-	The device should provide encapsulation of its internal side, so that the medical personnel only need to be able to read from the images and data points to come up with a judgement on the patient`s injury.
-	\item[Performance/Speed of the User Experience:]
-	Large information back-end data processing. Essentially, we want to be able to do asynchronous programming, and/or threading. The different threads running at the same time. Therefore the speed should not be too slow. The user experience should be improved with a nice interface. Building an interface would be the next thing we do on our list once we have our MVPs and Addons complete.
-\end{description}
 
 Another issue is that some of the features we intend to add have not been implemented before us, therefore we are unsure of whether they will be possible within the bounds imposed by the existing api. Such features include: posting private questions, view class activities (i.e., who have posted/commented on most posts), rating of posts, subscribing of different posts, etc.
 
