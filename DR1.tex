@@ -89,8 +89,7 @@ investigate the thermal response captured by an IR camera through internal excit
 algorithm-based integrated picture that show the blood perfusion directly. Then customer requirements and engineering 
 specifications are given to combine this design with real-life demands. Primary concerns for the customers are effectiveness
 of the method and the appropriate pricing. Factors as signal to noise ratio, cost and repeatability of measurements are the
-main critical points for engineering specifications. Project Plan is given to make the project process in order and define 
-each teammate a role to play. 
+main critical points for engineering specifications.
 
 \section{Problem Description \& Introduction}
 
@@ -102,7 +101,7 @@ assessment is an alternative choice. While it provides accurate results, it is i
 burn wound biopsies and incurs a delay of several days while waiting for the result \cite{Renkielska}. It also requires 
 experience of doctors. Another current technology to accurately show
 blood perfusion condition is Laser Doppler Imaging(LDI) \cite{Pape}. However, it is expensive (one machine costing
-about one-half million U.S. dollars) and not widely affordable and accessible [Wikipedia].
+about one-half million U.S. dollars) and not widely affordable and accessible.
 
 We are developing a system that is inexpensive, easy to use and provides accurate results in inspecting blood perfusion
 for medical purposes. Our system takes infra-red pictures, which after being analysed provides information
@@ -144,7 +143,7 @@ assess burn depth visually based on their experience, and it is only accurate 50
 Histopathological assessment is the method where multiple burn wound biopsies are taken for evaluation. Although it provides
 accurate results, it incurs a delay of several days \cite{Renkielska}. It also relies on experience of doctors. Laser Doppler Imaging(LDI) 
 is a method that is accurate and fast \cite{Pape}. However, each LDI machine costs about one-half million U.S. dollars.
-Therefore it is not widely affordable and accessible [Wikipedia].
+Therefore it is not widely affordable and accessible.
 
 \pagebreak
 \section{Customer Requirements and Engineering Specifications}
@@ -159,7 +158,7 @@ CR 2 & The cost should be within reasonable range. It should be affordable to us
 CR 3 & It should not require lots of medical procedures to diagnose the problem \\ \hline
 CR4 & It is better to be non-invasive.
 \end{tabular}
-\caption{Patients` Requirements}
+\caption{Patient's Requirements}
 \label{Patients CR}
 \end{table}
 
@@ -170,7 +169,7 @@ CR 1 & Primary concern: the fondness from the patients (all from the table above
 CR 2 & The cost to purchase the machine should be reasonable. Namely, there \\ &should be enough people that wants to use it to make it worthwhile. \\ \hline
 CR 3 &  It should be easy to train the medical personnel to use the machine and \\ & therefore the machines should be easy to operate. \\
 \end{tabular}
-\caption{Hospitals` Requirements}
+\caption{Hospital's Requirements}
 \label{Hospitals CR}
 \end {table}
 
@@ -181,7 +180,7 @@ CR 1 & Primary concern: the fondness from the hospitals (all from the table abov
 CR 2 & It is not too expensive to purchase the parts to manufacture the device compared to existing solutions\\ \hline
 CR 3 & It should not need lots of man power to manufacture the device \\ \hline
 \end{tabular}
-\caption{Medical Device Providers` Requirements}
+\caption{Medical Device Provider's Requirements}
 \label{Medical Devices CR}
 \end {table}
 
@@ -208,13 +207,13 @@ Once we got all the customer requirements, we started to rank them based on thei
 	\includegraphics[scale=0.7]{CRweight.jpg}
 	\caption{The Weights of Customer Requirements}
 \end{figure}
-According to this chart, accurate result is our first concern, so we should focus on the design process that can improve the accuracy of our product. Then we need to control the cost and reliability of the product which are the two other main requirements. After that, we would consider design our product to make it non-invasive, safety, short process time, less data storage space and easy to use, which we may have more freedom in making decision. To be clear, safety is important anyway, however in our case, our product is less likely to be unsafe, and so it’s just not our main concern. 
+According to this chart, accurate result is our first concern, so we should focus on the design process that can improve the accuracy of our product. Then we need to control the cost and reliability of the product which are the two other main requirements. After that, we would consider design our product to make it non-invasive, safety, short process time, less data storage space and easy to use, which we may have more freedom in making decision. To be clear, safety is important anyway, however in our case, our product is less likely to be unsafe, and so it's just not our main concern. 
 
 \subsubsection{Benchmark the competitions against Customer Requirements}
-In our project, we take Laser Doppler Imaging and ADT with external heat source as our benchmarks. Laser Doppler Imaging is highly accurate and reliable but really expensive and need expert to operate, so it gets full scores in accurate result and reliability while gets poor scores in inexpensive and easy to use. As for ADT with external heat source, it’s relatively cheap and accurate, however, external heat source may made burnt patient suffer more, so it got poor scores in non-invasive and safety.
+In our project, we take Laser Doppler Imaging and ADT with external heat source as our benchmarks. Laser Doppler Imaging is highly accurate and reliable but really expensive and need expert to operate, so it gets full scores in accurate result and reliability while gets poor scores in inexpensive and easy to use. As for ADT with external heat source, it's relatively cheap and accurate, however, external heat source may made burned patient suffer more, so it got poor scores in non-invasive and safety.
 
 \subsubsection{Generate Engineering Specifications}
-Since we have already analyzed the customer requirements, the next step to develop our QFD is to specify the engineering specifications of our product. Cost was the first characteristic that came to our mind since we didn’t have throughout design plan of our product at beginning.  Then we started to find other corresponding engineering specifications. Since the weight of accurate result ranks first in customer requirements, we come up with EKG sensitivity, correctness of measurement, time till failure (Reliability), signal to noise ratio and sample frequency of EKG as relevant characteristics. After that, according to our design procedure, we come up with other engineering specifications, including the algorithmic time complexity, the algorithmic space complexity, Number of images produced, Interface Complexity and sample frequency of EKG.
+Since we have already analyzed the customer requirements, the next step to develop our QFD is to specify the engineering specifications of our product. Cost was the first characteristic that came to our mind since we didn't have throughout design plan of our product at beginning.  Then we started to find other corresponding engineering specifications. Since the weight of accurate result ranks first in customer requirements, we come up with EKG sensitivity, correctness of measurement, time till failure (Reliability), signal to noise ratio and sample frequency of EKG as relevant characteristics. After that, according to our design procedure, we come up with other engineering specifications, including the algorithmic time complexity, the algorithmic space complexity, Number of images produced, Interface Complexity and sample frequency of EKG.
 
 \subsubsection{Cross Correlate Engineering Specifications}
 We want to cross correlate engineering specification because changing one engineering specification can affect others. Take cost as example, if we want to improve the sensitivity of EKG or the correctness of measurement, the cost of our product will increase correspondingly. The increase of cost is negative to us, so we assigned negative to the cross correlate between cost and sensitivity of EKG and correctness of measurement. And specifications like correctness of measurement and signal to noise ratio has positive relationship to each other, so we assigned strong positive between them. Then we fill the rest of correlate as well.
