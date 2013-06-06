@@ -90,7 +90,9 @@ investigate the thermal response captured by an IR camera as a result of interna
 integrated picture that shows the blood perfusion. Customer requirements and engineering 
 specifications are given to combine this design with real-life demands. Primary concerns for the customers are effectiveness
 of the method and the appropriate pricing. Factors such as signal to noise ratio, cost and repeatability of measurements are the
-main critical points for engineering specifications. If succesful, 
+main critical points for engineering specifications. Since we use IR camera to study blood perfusion, we decided to call our product 
+Perfusion Analyzer with IR camera(PAIR). If succesful, the PAIR can take the place of LDI equipment in the market and be used to
+help patients analyze perfusion-related diseases with much lower pay.
 
 \section{Problem Description \& Introduction}
 Although it's hard to see under the human skin, it is necessary for evaluating blood perfusion.
@@ -273,7 +275,7 @@ According to this chart, accurate result is our first concern, so we should focu
 In our project, we take Laser Doppler Imaging and ADT with external heat source as our benchmarks. Laser Doppler Imaging is highly accurate and reliable but really expensive and need expert to operate, so it gets full scores in accurate result and reliability while gets poor scores in inexpensive and easy to use. As for ADT with external heat source, it's relatively cheap and accurate, however, external heat source may made burned patient suffer more, so it got poor scores in non-invasive and safety.
 
 \subsubsection{Generate Engineering Specifications}
-Since we have already analyzed the customer requirements, the next step to develop our QFD is to specify the engineering specifications of our product. Cost was the first characteristic that came to our mind since we didn't have throughout design plan of our product at beginning.  Then we started to find other corresponding engineering specifications. Since the weight of accurate result ranks first in customer requirements, we come up with ECG sensitivity, correctness of measurement, time till failure (Reliability), signal to noise ratio and sample frequency of ECG as relevant characteristics. After that, according to our design procedure, we come up with other engineering specifications, including the algorithmic time complexity, the algorithmic space complexity, Number of images produced, Interface Complexity and sample frequency of ECG.
+Since we have already analyzed the customer requirements, the next step to develop our QFD is to specify the engineering specifications of our product. Cost was the first characteristic that came to our mind since we didn't have throughout design plan of our product at beginning.  Then we started to find other corresponding engineering specifications. Since the weight of accurate result ranks first in customer requirements, we come up with IR camera sensitivity, correctness of measurement, time till failure (Reliability), signal to noise ratio and sample frequency of ECG as relevant characteristics. After that, according to our design procedure, we come up with other engineering specifications, including the algorithmic time complexity, the algorithmic space complexity, Number of images produced, Interface Complexity and sample frequency of ECG.
 
 \subsubsection{Cross Correlate Engineering Specifications}
 We want to cross correlate engineering specification because changing one engineering specification can affect others. Take cost as example, if we want to improve the sensitivity of ECG or the correctness of measurement, the cost of our product will increase correspondingly. The increase of cost is negative to us, so we assigned negative to the cross correlate between cost and sensitivity of ECG and correctness of measurement. And specifications like correctness of measurement and signal to noise ratio has positive relationship to each other, so we assigned strong positive between them. Then we fill the rest of correlate as well.
@@ -293,7 +295,7 @@ After we finished the correlate Customer Requirements to Engineering Specificati
 	\caption{The Engineering Specifications}
 \end{figure}
 
-In our case, signal to noise ratio, cost and correctness of measurement are most important specifications on which we should pay most attention. Then follows ECG sensitivity, reliability, sample frequency of ECG and number of images produced. And the algorithmic time complexity and algorithmic space complexity turned out to be less important, where we can have more design freedom.
+In our case, signal to noise ratio, cost and correctness of measurement are most important specifications on which we should pay most attention. Then follows IR camera sensitivity, reliability, sample frequency of ECG and number of images produced. And the algorithmic time complexity and algorithmic space complexity turned out to be less important, where we can have more design freedom.
 \subsubsection{Set Targets for Engineering Specifications}
 Setting targets for Engineering Specifications that you just come up with is a kind of like brainstorm. We need to search for the present criteria to make our value reasonable, and also ensure its uniqueness to show our innovation. Thus, we set targets for our Engineering Specifications as following:
 
