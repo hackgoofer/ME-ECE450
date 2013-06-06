@@ -165,25 +165,37 @@ used in practice, and it would incur pain to patients when it applies thermal ex
 \pagebreak
 
 \section{Concept Design}
-
-The ECG device is built based on the instruction diagram below.
+Similar to the ADT method, we also use infra-red camera to look at temperature transients to evaluate blood perfusion. 
+However, we use the human heart beat as internal excitation source. We built an electrocardiogram (ECG), which captures 
+heart beats and outputs electric signal. We plan to use that signal to trigger our infra-red camera. The ECG device is 
+built based on the instruction diagram below.
 \begin{figure}[H]
     \centering
         \includegraphics[scale=0.3]{ecg_circuit_diagram.png}
-        \caption{EKG circuit diagram}
+        \caption{ECG circuit diagram}
 \end{figure}
-
 This circuit uses 6 op-amps to help eliminate effects of noise. Three electrodes are used, among which 2 are used 
 to measure the voltage difference across the body, and one as a reference to the ground. We wire the output of the ECG 
 circuit to the sound port of a PC, which records the output of the op-amp using sound recording software, removes the 
-noise from the ECG digitally, and outputs ECG traces for further analysis.\\
-\\
-This is the circuit we built.
+noise from the ECG digitally, and outputs ECG traces for further analysis. The picture below shows the circuit we built.
 \begin{figure}[H]
     \centering
-        \includegraphics[scale=0.1]{EKG_photo.jpg}
-        \caption{EKG circuit}
+        \includegraphics[scale=0.1]{ECG_photo.jpg}
+        \caption{ECG circuit}
 \end{figure}
+
+Human body temperature fluctuates in response to heart beats. When the heart pumps blood to human body, the temperature rises, 
+and it falls between the heart beats. Therefore, body temperature fluctuation will be in sync with the signal we get from 
+ECG. We can thus use the signal to trigger the infra-red camera to take a series of pictures. 
+\begin{figure}[H]
+    \centering
+        \includegraphics[scale=0.1]{our_method.jpg}
+        \caption{Expected relation of ECG signal with body temperature}
+\end{figure}
+We will firstly look at the 
+temperature change in different body areas, which already provides information about perfusion. For instance, we expect the 
+temperature change in burned area to be different from that in normal area. Further, we expect the temperature change to differ 
+based on burn depth.
 
 
 \section{Customer Requirements and Engineering Specifications}
@@ -252,10 +264,10 @@ According to this chart, accurate result is our first concern, so we should focu
 In our project, we take Laser Doppler Imaging and ADT with external heat source as our benchmarks. Laser Doppler Imaging is highly accurate and reliable but really expensive and need expert to operate, so it gets full scores in accurate result and reliability while gets poor scores in inexpensive and easy to use. As for ADT with external heat source, it's relatively cheap and accurate, however, external heat source may made burned patient suffer more, so it got poor scores in non-invasive and safety.
 
 \subsubsection{Generate Engineering Specifications}
-Since we have already analyzed the customer requirements, the next step to develop our QFD is to specify the engineering specifications of our product. Cost was the first characteristic that came to our mind since we didn't have throughout design plan of our product at beginning.  Then we started to find other corresponding engineering specifications. Since the weight of accurate result ranks first in customer requirements, we come up with EKG sensitivity, correctness of measurement, time till failure (Reliability), signal to noise ratio and sample frequency of EKG as relevant characteristics. After that, according to our design procedure, we come up with other engineering specifications, including the algorithmic time complexity, the algorithmic space complexity, Number of images produced, Interface Complexity and sample frequency of EKG.
+Since we have already analyzed the customer requirements, the next step to develop our QFD is to specify the engineering specifications of our product. Cost was the first characteristic that came to our mind since we didn't have throughout design plan of our product at beginning.  Then we started to find other corresponding engineering specifications. Since the weight of accurate result ranks first in customer requirements, we come up with ECG sensitivity, correctness of measurement, time till failure (Reliability), signal to noise ratio and sample frequency of ECG as relevant characteristics. After that, according to our design procedure, we come up with other engineering specifications, including the algorithmic time complexity, the algorithmic space complexity, Number of images produced, Interface Complexity and sample frequency of ECG.
 
 \subsubsection{Cross Correlate Engineering Specifications}
-We want to cross correlate engineering specification because changing one engineering specification can affect others. Take cost as example, if we want to improve the sensitivity of EKG or the correctness of measurement, the cost of our product will increase correspondingly. The increase of cost is negative to us, so we assigned negative to the cross correlate between cost and sensitivity of EKG and correctness of measurement. And specifications like correctness of measurement and signal to noise ratio has positive relationship to each other, so we assigned strong positive between them. Then we fill the rest of correlate as well.
+We want to cross correlate engineering specification because changing one engineering specification can affect others. Take cost as example, if we want to improve the sensitivity of ECG or the correctness of measurement, the cost of our product will increase correspondingly. The increase of cost is negative to us, so we assigned negative to the cross correlate between cost and sensitivity of ECG and correctness of measurement. And specifications like correctness of measurement and signal to noise ratio has positive relationship to each other, so we assigned strong positive between them. Then we fill the rest of correlate as well.
 
 \subsubsection{Correlate Customer Requirements to Engineering Specifications}
 Here we come to the most important part of QFD. For each pair of a specification and a requirement, we are supposed to enter correlation value\cite{450}: \\
@@ -272,7 +284,7 @@ After we finished the correlate Customer Requirements to Engineering Specificati
 	\caption{The Engineering Specifications}
 \end{figure}
 
-In our case, signal to noise ratio, cost and correctness of measurement are most important specifications on which we should pay most attention. Then follows EKG sensitivity, reliability, sample frequency of EKG and number of images produced. And the algorithmic time complexity and algorithmic space complexity turned out to be less important, where we can have more design freedom.
+In our case, signal to noise ratio, cost and correctness of measurement are most important specifications on which we should pay most attention. Then follows ECG sensitivity, reliability, sample frequency of ECG and number of images produced. And the algorithmic time complexity and algorithmic space complexity turned out to be less important, where we can have more design freedom.
 \subsubsection{Set Targets for Engineering Specifications}
 Setting targets for Engineering Specifications that you just come up with is a kind of like brainstorm. We need to search for the present criteria to make our value reasonable, and also ensure its uniqueness to show our innovation. Thus, we set targets for our Engineering Specifications as following:
 
@@ -285,7 +297,7 @@ Setting targets for Engineering Specifications that you just come up with is a k
 \subsection{Functional Requirements}
 Devices: 
 \begin{enumerate}{\alph{enumi}}
-	\item EKG, a device we use to trigger the infra-red camera to take a set of samples
+	\item ECG, a device we use to trigger the infra-red camera to take a set of samples
 	\item Infrared camera
 	\item LabVIEW for data acquisition
 \end{enumerate}
@@ -295,11 +307,11 @@ Below are the sequence of tasks we need to accomplish:
    	\begin{itemize}
    	\item[\textbf{Task 1}] Literature Research\\
    	\hfill Verification: Have a basic understanding of the current technology and how it compares with what we are doing.
-	\item[\textbf{Task 2}] Making the EKG, wiring the circuits\\
-	\hfill Verification: Attach the EKG to oscilloscope, and it should give you a graph of the signal. Or LabVIEW program should generate a peak signal to indicate the heart beat, we should be able to see the electrical signal on the graph.
-   	\item[\textbf{Task 3}]  EKG should be working, and have a trigger signal once the heart beats.\\
+	\item[\textbf{Task 2}] Making the ECG, wiring the circuits\\
+	\hfill Verification: Attach the ECG to oscilloscope, and it should give you a graph of the signal. Or LabVIEW program should generate a peak signal to indicate the heart beat, we should be able to see the electrical signal on the graph.
+   	\item[\textbf{Task 3}]  ECG should be working, and have a trigger signal once the heart beats.\\
     	\hfill Verification: Same as above, and we should decrease the reaction time and maximize the trigger signal
-   	\item[\textbf{Task 4}]  EKG should be able to trigger the IR camera to get a series of images as the data source\\
+   	\item[\textbf{Task 4}]  ECG should be able to trigger the IR camera to get a series of images as the data source\\
     	\hfill Verification: LabVIEW program should be able to get a sequence of data, and we should be able to see those images as they are generated.
    	\item[\textbf{Task 5}]  Signal processing to reduce noise\\
    	\hfill Verification: We should be able to observe that the signal to noise value increase
@@ -309,7 +321,7 @@ Below are the sequence of tasks we need to accomplish:
   
   \item[Addons] \hspace{1cm}
   	\begin{itemize}
-   	\item[\textbf{Task 7}] Improve the sensitivity of EKG device\\
+   	\item[\textbf{Task 7}] Improve the sensitivity of ECG device\\
 	\hfill Verification: It should collect images faster as soon as it detects the pitch \\
 	\item[\textbf{Task 8}] Fast Algorithm: Improve the algorithm to reduce the time complexity and space complexity \\
 	\hfill Verification: This can be checked by adopting stress tests.
