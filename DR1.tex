@@ -137,11 +137,29 @@ is a method that is accurate and fast \cite{Pape}. However, each LDI machine cos
 Therefore it is not widely affordable and accessible.
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{LOGO.png}
+    \includegraphics[scale=0.7]{LDI_schematic.jpg}
 \end{figure}
 \pagebreak
 
 \section{Concept Design}
+
+The ECG device is built based on the instruction diagram below.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{ecg_circuit_diagram.png}
+\end{figure}
+
+This circuit uses 6 op-amps to help eliminate effects of noise. Three electrodes are used, among which 2 are used 
+to measure the voltage difference across the body, and one as a reference to the ground. We wire the output of the ECG 
+circuit to the sound port of a PC, which records the output of the op-amp using sound recording software, removes the 
+noise from the ECG digitally, and outputs ECG traces for further analysis.\\
+\\
+This is the circuit we built.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{EKG_photo.jpg}
+\end{figure}
+
 
 \section{Customer Requirements and Engineering Specifications}
 \subsection{Stakeholder Analysis \& Customer Requirements}
@@ -225,7 +243,7 @@ After we finished the correlate Customer Requirements to Engineering Specificati
 
 \begin{figure}[H]
     \centering
-	\includegraphics[scale=0.7]{zhentmfan.png}
+	\includegraphics[scale=0.7]{engineering_specifications.png}
 	\caption{The Engineering Specifications}
 \end{figure}
 
