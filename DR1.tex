@@ -153,10 +153,10 @@ Our primary stakeholders are medical device provider because we would be selling
 \begin {table}[H]
 \centering
 \begin{tabular}{l|p{12cm}}
-CR 1 & Primary concern: the effectiveness of the method in determining burn depth or other problems with blood perfusion. \\ \hline
-CR 2 & The cost should be within reasonable range. It should be affordable to use the machine for one time. \\ \hline
-CR 3 & It should not require lots of medical procedures to diagnose the problem \\ \hline
-CR4 & It is better to be non-invasive.
+CR 1 & Primary concern: the effectiveness and accuracy to analyze problems with blood perfusion \\ \hline
+CR 2 & Reasonable cost for one time use \\ \hline
+CR 3 & Less medical procedures to diagnose \\ \hline
+CR4 & non-invasive.
 \end{tabular}
 \caption{Patient's Requirements}
 \label{Patients CR}
@@ -165,9 +165,9 @@ CR4 & It is better to be non-invasive.
 \begin {table}[H]
 \centering
 \begin{tabular}{l|p{12cm}}
-CR 1 & Primary concern: the fondness from the patients (all from the table above) \\ \hline
-CR 2 & The cost to purchase the machine should be reasonable. Namely, there \\ &should be enough people that wants to use it to make it worthwhile. \\ \hline
-CR 3 &  It should be easy to train the medical personnel to use the machine and \\ & therefore the machines should be easy to operate. \\
+CR 1 & Primary concern: all from the table above \\ \hline
+CR 2 & Reasonable cost to purchase one machine \\ \hline
+CR 3 & User friendly
 \end{tabular}
 \caption{Hospital's Requirements}
 \label{Hospitals CR}
@@ -176,9 +176,8 @@ CR 3 &  It should be easy to train the medical personnel to use the machine and 
 \begin {table}[H]
 \centering
 \begin{tabular}{l|p{12cm}}
-CR 1 & Primary concern: the fondness from the hospitals (all from the table above) \\ \hline
-CR 2 & It is not too expensive to purchase the parts to manufacture the device compared to existing solutions\\ \hline
-CR 3 & It should not need lots of man power to manufacture the device \\ \hline
+CR 1 & Primary concern: all from the table above \\ \hline
+CR 2 & Reasonable cost to manufacture one machine \\ \hline
 \end{tabular}
 \caption{Medical Device Provider's Requirements}
 \label{Medical Devices CR}
@@ -244,43 +243,43 @@ Setting targets for Engineering Specifications that you just come up with is a k
 \end{figure}
 
 \subsection{Functional Requirements}
-Doman Objects: 
+Devices: 
 \begin{enumerate}{\alph{enumi}}
 	\item EKG, a device we use to trigger the infra-red camera to take a set of samples
 	\item Infrared camera
 	\item LabVIEW for data acquisition
 \end{enumerate}
+Below are the sequence of tasks we need to accomplish:
 \begin{description}
-
    \item[Basics - Minimum Viable Product (MVP)] \hspace{1cm}
    	\begin{itemize}
-   	\item[\textbf{A1}] Literature Research\\
+   	\item[\textbf{Task 1}] Literature Research\\
    	\hfill Verification: Have a basic understanding of the current technology and how it compares with what we are doing.
-	\item[\textbf{A2}] Making the EKG, wiring the circuits\\
+	\item[\textbf{Task 2}] Making the EKG, wiring the circuits\\
 	\hfill Verification: Attach the EKG to oscilloscope, and it should give you a graph of the signal. Or LabVIEW program should generate a peak signal to indicate the heart beat, we should be able to see the electrical signal on the graph.
-   	\item[\textbf{A3}]  EKG should be working, and have a trigger signal once the heart beats.\\
+   	\item[\textbf{Task 3}]  EKG should be working, and have a trigger signal once the heart beats.\\
     	\hfill Verification: Same as above, and we should decrease the reaction time and maximize the trigger signal
-   	\item[\textbf{A4}]  EKG should be able to trigger the IR camera to get a series of images as the data source\\
+   	\item[\textbf{Task 4}]  EKG should be able to trigger the IR camera to get a series of images as the data source\\
     	\hfill Verification: LabVIEW program should be able to get a sequence of data, and we should be able to see those images as they are generated.
-   	\item[\textbf{A5}]  Signal processing to reduce noise\\
+   	\item[\textbf{Task 5}]  Signal processing to reduce noise\\
    	\hfill Verification: We should be able to observe that the signal to noise value increase
-	\item[\textbf{A6}] Software algorithm to quickly process the images. \\
+	\item[\textbf{Task 6}] Software algorithm to quickly process the images. \\
    	\hfill Verification: The end result should be one image of blood perfusion that describes the $\delta T$.   
 \end{itemize}
   
   \item[Addons] \hspace{1cm}
   	\begin{itemize}
-   	\item[\textbf{A7}] Improve the sensitivity of EKG device\\
+   	\item[\textbf{Task 7}] Improve the sensitivity of EKG device\\
 	\hfill Verification: It should collect images faster as soon as it detects the pitch \\
-	\item[\textbf{A8}] Fast Algorithm: Improve the algorithm to reduce the time complexity and space complexity \\
+	\item[\textbf{Task 8}] Fast Algorithm: Improve the algorithm to reduce the time complexity and space complexity \\
 	\hfill Verification: This can be checked by adopting stress tests.
-	\item[\textbf{A9}] Fast Processing: Asynchronous processing when the images are generated to reduce processing time.\\
+	\item[\textbf{Task 9}] Fast Processing: Asynchronous processing when the images are generated to reduce processing time.\\
    	\hfill Verification: Processed images and data should be available even when the camera is still taking pictures.
 	\end{itemize}
 	
   \item[Non-technical requirements]\hspace{1cm}
   	\begin{itemize}
-	\item[\textbf{A10}] The device should be non-invasive when used on patients. \\
+	\item[\textbf{Task 10}] The device should be non-invasive when used on patients. \\
 	\hfill Clarification: The device should not apply a heat source to the patients to agitate the injury situation. And it should not require the doctors to perform surgery when making the judgement of the severity of the injury.
 	\end{itemize}
 \end{description}
@@ -294,8 +293,6 @@ Doman Objects:
 	\item[Performance/Speed of the User Experience:]
 	Large information back-end data processing. Essentially, we want to be able to do asynchronous programming, and/or threading. The different threads running at the same time. Therefore the speed should not be too slow. The user experience should be improved with a nice interface. Building an interface would be the next thing we do on our list once we have our MVPs and Addons complete.
 \end{description}
-
-Another issue is that some of the features we intend to add have not been implemented before us, therefore we are unsure of whether they will be possible within the bounds imposed by the existing api. Such features include: posting private questions, view class activities (i.e., who have posted/commented on most posts), rating of posts, subscribing of different posts, etc.
 
 \section{Project Plan}
 The project is basically is divided into four periods. The first is the preparation. During this, we study about the current technology and learn about the software and machines we are going to use.  We have done with this part and have already started the next, generating and converting the heart beat signals from the ECG machine. We have set up the device for collecting the heartbeats and read that from the device to LabVIEW. We are in the process of stabilizing the signal and converting that. The third part is the major body of the project, during which we are going to develop the algorithm to trigger the camera to take multiple pictures and finally combine them into a single image, showing the integrated information to the doctor directly.  The last period we will do the testing. We will have each part works as a whole and hopefully we can contact the local hospital and do some tests in the real cases.
