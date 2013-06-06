@@ -132,12 +132,35 @@ assess burn depth visually based on their experience, and it is only accurate 50
 Histopathological assessment is the method where multiple burn wound biopsies are taken for evaluation. Although it provides
 accurate results, it incurs a delay of several days \cite{Renkielska}. It also relies on experience of doctors.\\
 \\
-Laser Doppler Imaging(LDI) 
-is a method that is accurate and fast \cite{Pape}. However, each LDI machine costs about one-half million U.S. dollars.
-Therefore it is not widely affordable and accessible.
+The way Laser Doppler Imaging (LDI) works is that it directs a low intensity laser light at the skin, 
+which is reflected by both moving red blood cells and the static tissue. Moving blood cells impart a Doppler frequency shift 
+on the incident light beam. From processing the mixed light reflection, perfusion values can be obtained, which can be used 
+to generate a two-dimensional colour image \cite{Pape}. This method is accurate and fast. 
+However, each LDI machine costs about one-half million U.S. dollars. Therefore it is not widely affordable and accessible.
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{LDI_schematic.jpg}
+        \includegraphics[scale=0.3]{LDI_schematic.jpg}
+        \caption{LDI schematic}
+\end{figure}
+\begin{figure}[H]
+    \centering
+        \includegraphics[scale=0.3]{LDI_colour_image.jpg}
+        \caption{LDI colour image}
+\end{figure}
+
+The Active Dynamic Thermal imaging (ADT) method applies external excitation (usually light and heat) to the area of interest, 
+and uses infra-red camera to look at the temperature response. After processing and filtering out the noise, a colour image 
+reflecting perfusion is generated. This method gave accurate results in experiment on pigs. However, it is not yet widely 
+used in practice, and it would incur pain to patients when it applies thermal excitation to patients' wounds. 
+\begin{figure}[H]
+    \centering
+        \includegraphics[scale=0.3]{ADT_schematic.jpg}
+        \caption{ADT schematic}
+\end{figure}
+\begin{figure}[H]
+    \centering
+        \includegraphics[scale=0.3]{ADT_colour_image.jpg}
+        \caption{ADT colour image}
 \end{figure}
 \pagebreak
 
@@ -146,7 +169,8 @@ Therefore it is not widely affordable and accessible.
 The ECG device is built based on the instruction diagram below.
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{ecg_circuit_diagram.png}
+        \includegraphics[scale=0.3]{ecg_circuit_diagram.png}
+        \caption{EKG circuit diagram}
 \end{figure}
 
 This circuit uses 6 op-amps to help eliminate effects of noise. Three electrodes are used, among which 2 are used 
@@ -157,7 +181,8 @@ noise from the ECG digitally, and outputs ECG traces for further analysis.\\
 This is the circuit we built.
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{EKG_photo.jpg}
+        \includegraphics[scale=0.1]{EKG_photo.jpg}
+        \caption{EKG circuit}
 \end{figure}
 
 
