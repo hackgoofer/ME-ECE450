@@ -139,13 +139,16 @@ to generate a two-dimensional colour image \cite{Pape}. This method is accurate 
 However, each LDI machine costs about one-half million U.S. dollars. Therefore it is not widely affordable and accessible.
 \begin{figure}[H]
     \centering
+    \begin{minipage}[t]{0.44\textwidth}
+        \centering
         \includegraphics[scale=0.3]{LDI_schematic.jpg}
         \caption{LDI schematic}
-\end{figure}
-\begin{figure}[H]
-    \centering
-        \includegraphics[scale=0.3]{LDI_colour_image.jpg}
+    \end{minipage}
+    \begin{minipage}[t]{0.44\textwidth}
+        \centering
+        \includegraphics[scale=0.15]{LDI_colour_image.jpg}
         \caption{LDI colour image}
+    \end{minipage}
 \end{figure}
 
 The Active Dynamic Thermal imaging (ADT) method applies external excitation (usually light and heat) to the area of interest, 
@@ -154,15 +157,21 @@ reflecting perfusion is generated. This method gave accurate results in experime
 used in practice, and it would incur pain to patients when it applies thermal excitation to patients' wounds. 
 \begin{figure}[H]
     \centering
+    \begin{minipage}[t]{0.44\textwidth}
+        \centering
         \includegraphics[scale=0.3]{ADT_schematic.jpg}
         \caption{ADT schematic}
-\end{figure}
-\begin{figure}[H]
-    \centering
-        \includegraphics[scale=0.3]{ADT_colour_image.jpg}
+    \end{minipage}
+    \begin{minipage}[t]{0.44\textwidth}
+        \centering
+        \includegraphics[scale=0.2]{ADT_colour_image.jpg}
         \caption{ADT colour image}
+    \end{minipage}
 \end{figure}
 \pagebreak
+
+
+
 
 \section{Concept Design}
 Similar to the ADT method, we also use infra-red camera to look at temperature transients to evaluate blood perfusion. 
@@ -171,7 +180,7 @@ heart beats and outputs electric signal. We plan to use that signal to trigger o
 built based on the instruction diagram below.
 \begin{figure}[H]
     \centering
-        \includegraphics[scale=0.3]{ecg_circuit_diagram.png}
+        \includegraphics[scale=0.4]{ecg_circuit_diagram.png}
         \caption{ECG circuit diagram}
 \end{figure}
 This circuit uses 6 op-amps to help eliminate effects of noise. Three electrodes are used, among which 2 are used 
@@ -189,7 +198,7 @@ and it falls between the heart beats. Therefore, body temperature fluctuation wi
 ECG. We can thus use the signal to trigger the infra-red camera to take a series of pictures. 
 \begin{figure}[H]
     \centering
-        \includegraphics[scale=0.1]{our_method.jpg}
+        \includegraphics[scale=0.7]{our_method.jpg}
         \caption{Expected relation of ECG signal with body temperature}
 \end{figure}
 We will firstly look at the 
