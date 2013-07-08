@@ -1,0 +1,25 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Revised Abstract}{3}
+\contentsline {section}{\numberline {2}Problem Description \& Introduction}{3}
+\contentsline {section}{\numberline {3}Information Sources}{4}
+\contentsline {section}{\numberline {4}Customer Requirements and Engineering Specifications}{5}
+\contentsline {subsection}{\numberline {4.1}Stakeholder Analysis \& Customer Requirements}{5}
+\contentsline {subsection}{\numberline {4.2}QFD Design}{5}
+\contentsline {subsubsection}{\numberline {4.2.1}Determine the weights for Customer Requirements}{6}
+\contentsline {subsubsection}{\numberline {4.2.2}Benchmark the competitions against Customer Requirements}{7}
+\contentsline {subsubsection}{\numberline {4.2.3}Generate Engineering Specifications}{7}
+\contentsline {subsubsection}{\numberline {4.2.4}Cross Correlate Engineering Specifications}{8}
+\contentsline {subsubsection}{\numberline {4.2.5}Correlate Customer Requirements to Engineering Specifications}{8}
+\contentsline {subsubsection}{\numberline {4.2.6}Importance Rating}{8}
+\contentsline {subsubsection}{\numberline {4.2.7}Set Targets for Engineering Specifications}{9}
+\contentsline {subsection}{\numberline {4.3}Functional Requirements}{9}
+\contentsline {subsection}{\numberline {4.4}Non-Functional Requirements}{10}
+\contentsline {section}{\numberline {5}Project Plan}{11}
+\contentsline {section}{\numberline {6}Conclusions}{11}
+\contentsline {section}{\numberline {7}Bio}{12}
+\contentsline {subsection}{\numberline {7.1}Sam Li}{12}
+\contentsline {subsection}{\numberline {7.2}Sasha Sheng}{13}
+\contentsline {subsection}{\numberline {7.3}Christina Yan}{14}
+\contentsline {subsection}{\numberline {7.4}Siyuan Zhang}{15}
+\contentsline {subsection}{\numberline {7.5}Wang Zi}{16}
+\contentsline {section}{\numberline {8}Appendix - Gantt Chart}{17}
