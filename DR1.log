@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.5.18)  8 JUL 2013 12:40
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.5.18)  2 AUG 2013 09:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -565,8 +565,7 @@ Package ifvtex Info: VTeX not detected.
 \f@ncyO@erf=\skip60
 \f@ncyO@olf=\skip61
 \f@ncyO@orf=\skip62
-)
-No file DR1.aux.
+) (./DR1.aux)
 \openout1 = `DR1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -584,7 +583,7 @@ LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 73.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 73.
 
-(/usr/local/texlive/2010/texmf-dist/tex/latex/fourier/fmlfutm.fd
+ (/usr/local/texlive/2010/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 73.
@@ -750,17 +749,17 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 80
 .
  (./DR1.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 6.
+(Font)              scaled to size 10.07397pt on input line 7.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 6.
+(Font)              scaled to size 7.63599pt on input line 7.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 6.
+(Font)              scaled to size 5.51999pt on input line 7.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 6.
+(Font)              scaled to size 10.07397pt on input line 7.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 6.
+(Font)              scaled to size 7.63599pt on input line 7.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 6.
+(Font)              scaled to size 5.51999pt on input line 7.
 )
 \tf@toc=\write4
 \openout4 = `DR1.toc'.
@@ -768,133 +767,168 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 [2]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 100.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 101.
 
 
-LaTeX Warning: Citation `Renkielska' on page 3 undefined on input line 100.
+LaTeX Warning: Citation `Renkielska' on page 3 undefined on input line 101.
 
 
-LaTeX Warning: Citation `Renkielska' on page 3 undefined on input line 102.
+LaTeX Warning: Citation `Renkielska' on page 3 undefined on input line 103.
 
 
-LaTeX Warning: Citation `Pape' on page 3 undefined on input line 104.
+LaTeX Warning: Citation `Pape' on page 3 undefined on input line 105.
 
 
-LaTeX Warning: Citation `Renkielska' on page 3 undefined on input line 111.
+LaTeX Warning: Citation `Renkielska' on page 3 undefined on input line 112.
 
 
-LaTeX Warning: Citation `Ruminski' on page 3 undefined on input line 111.
+LaTeX Warning: Citation `Ruminski' on page 3 undefined on input line 112.
 
 
-LaTeX Warning: Citation `Renkielska' on page 3 undefined on input line 113.
+LaTeX Warning: Citation `Renkielska' on page 3 undefined on input line 114.
 
 
-LaTeX Warning: Citation `Ruminski' on page 3 undefined on input line 113.
+LaTeX Warning: Citation `Ruminski' on page 3 undefined on input line 114.
 
 
-LaTeX Warning: Citation `Ruminski' on page 3 undefined on input line 122.
+LaTeX Warning: Citation `Ruminski' on page 3 undefined on input line 123.
 
 
-LaTeX Warning: Citation `Renkielska' on page 3 undefined on input line 131.
+Underfull \hbox (badness 10000) in paragraph at lines 98--126
+
+ []
+
+[3]
+
+LaTeX Warning: Citation `Renkielska' on page 4 undefined on input line 135.
 
 
-LaTeX Warning: Citation `Renkielska' on page 3 undefined on input line 133.
+LaTeX Warning: Citation `Pape' on page 4 undefined on input line 140.
+
+<LDI_schematic.jpg, id=18, 722.7pt x 688.5725pt>
+File: LDI_schematic.jpg Graphic file (type jpg)
+ <use LDI_schematic.jpg>
+Overfull \hbox (10.11832pt too wide) in paragraph at lines 146--147
+ [][] 
+ []
+
+<LDI_colour_image.jpg, id=19, 953.81343pt x 2107.875pt>
+File: LDI_colour_image.jpg Graphic file (type jpg)
+
+<use LDI_colour_image.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 128--154
+
+ []
 
 
-LaTeX Warning: Citation `Pape' on page 3 undefined on input line 134.
+Underfull \hbox (badness 10000) in paragraph at lines 128--154
 
-[3] [4]
+ []
 
-LaTeX Warning: Citation `cres1' on page 5 undefined on input line 140.
+<ADT_schematic.jpg, id=20, 755.82375pt x 511.15968pt>
+File: ADT_schematic.jpg Graphic file (type jpg)
+ <use ADT_schematic.jpg>
+Overfull \hbox (20.05553pt too wide) in paragraph at lines 164--165
+ [][] 
+ []
 
+<ADT_colour_image.jpg, id=21, 651.93562pt x 920.68968pt>
+File: ADT_colour_image.jpg Graphic file (type jpg)
 
-LaTeX Warning: Reference `Patients CR' on page 5 undefined on input line 141.
+<use ADT_colour_image.jpg> [4 <./LDI_schematic.jpg> <./LDI_colour_image.jpg>]
+[5 <./ADT_schematic.jpg> <./ADT_colour_image.jpg>]
+<ecg_circuit_diagram.png, id=28, 986.084pt x 887.315pt>
+File: ecg_circuit_diagram.png Graphic file (type png)
 
+<use ecg_circuit_diagram.png> <ECG_photo.jpg, id=29, 4015.0pt x 3011.25pt>
+File: ECG_photo.jpg Graphic file (type jpg)
 
-LaTeX Warning: Reference `Hospitals CR' on page 5 undefined on input line 141.
+<use ECG_photo.jpg> [6 <./ecg_circuit_diagram.png>]
+<our_method.jpg, id=34, 616.55344pt x 346.29375pt>
+File: our_method.jpg Graphic file (type jpg)
+ <use our_method.jpg>
+[7 <./ECG_photo.jpg> <./our_method.jpg>]
 
+LaTeX Warning: Citation `cres1' on page 8 undefined on input line 214.
 
-LaTeX Warning: Reference `Medical Devices CR' on page 5 undefined on input line
- 141.
-
-<qfd.png, id=21, 473.51906pt x 424.58624pt>
+<qfd.png, id=39, 473.51906pt x 424.58624pt>
 File: qfd.png Graphic file (type png)
  <use qfd.png>
-Overfull \hbox (3.76286pt too wide) in paragraph at lines 186--187
+Overfull \hbox (3.76286pt too wide) in paragraph at lines 260--261
  [][] 
  []
 
-[5] <CRweight.jpg, id=25, 648.92438pt x 383.18156pt>
+[8] <CRweight.jpg, id=43, 648.92438pt x 383.18156pt>
 File: CRweight.jpg Graphic file (type jpg)
  <use CRweight.jpg>
-[6 <./qfd.png>] [7 <./CRweight.jpg>]
+[9 <./qfd.png>] [10 <./CRweight.jpg>]
 
-LaTeX Warning: Citation `450' on page 8 undefined on input line 210.
+LaTeX Warning: Citation `450' on page 11 undefined on input line 284.
 
-<zhentmfan.png, id=33, 671.50874pt x 356.83313pt>
-File: zhentmfan.png Graphic file (type png)
- <use zhentmfan.png> [8 <./zhentmfan.png (PNG copy)>] <target.png, id=37, 447.1
-7062pt x 228.10219pt>
-File: target.png Graphic file (type png)
+<engineering_specifications.png, id=50, 671.50874pt x 356.83313pt>
+File: engineering_specifications.png Graphic file (type png)
 
-<use target.png> [9 <./target.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
+<use engineering_specifications.png> [11 <./engineering_specifications.png (PNG
+ copy)>] <target.jpg, id=54, 421.575pt x 283.81032pt>
+File: target.jpg Graphic file (type jpg)
+ <use target.jpg> [12 <./target.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 335--337
 
  []
 
-<pjp.png, id=41, 416.757pt x 68.8974pt>
+[13] <pjp.png, id=64, 416.757pt x 68.8974pt>
 File: pjp.png Graphic file (type png)
- <use pjp.png> [10]
-Underfull \hbox (badness 10000) in paragraph at lines 297--300
+ <use pjp.png>
+Underfull \hbox (badness 10000) in paragraph at lines 371--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--302
+Underfull \hbox (badness 10000) in paragraph at lines 374--376
 
  []
 
-[11 <./pjp.png>] <lmt.png, id=51, 185.493pt x 123.8226pt>
+[14 <./pjp.png>] <lmt.png, id=69, 185.493pt x 123.8226pt>
 File: lmt.png Graphic file (type png)
  <use lmt.png>
-[12 <./lmt.png>] <Profile.jpg, id=56, 266.9975pt x 266.9975pt>
+[15 <./lmt.png>] <Profile.jpg, id=74, 266.9975pt x 266.9975pt>
 File: Profile.jpg Graphic file (type jpg)
 
-<use Profile.jpg> [13 <./Profile.jpg>]
-<Christina.png, id=61, 358.941pt x 242.8272pt>
+<use Profile.jpg> [16 <./Profile.jpg>]
+<Christina.png, id=78, 358.941pt x 242.8272pt>
 File: Christina.png Graphic file (type png)
- <use Christina.png> [14 <./Christina.png>] <zsy.jpg, id=66, 1959.32pt x 3276.2
+ <use Christina.png> [17 <./Christina.png>] <zsy.jpg, id=83, 1959.32pt x 3276.2
 4pt>
 File: zsy.jpg Graphic file (type jpg)
- <use zsy.jpg> [15 <./zsy.jpg>] <W.jpg, id=70, 546.04pt x 764.8575pt>
+ <use zsy.jpg> [18 <./zsy.jpg>] <W.jpg, id=87, 546.04pt x 764.8575pt>
 File: W.jpg Graphic file (type jpg)
- <use W.jpg>
-No file DR1.bbl.
-[16 <./W.jpg>] <GANTT.png, id=74, 1027.84pt x 227.85126pt>
+ <use W.jpg> (./DR1.bbl [19 <./W.jpg>]
+
+LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
+               before end of `thebibliography' environment on input line 3.
+
+) [20] <GANTT.png, id=95, 1027.84pt x 227.85126pt>
 File: GANTT.png Graphic file (type png)
  <use GANTT.png>
-Overfull \hbox (26.37398pt too wide) in paragraph at lines 358--359
+Overfull \hbox (26.37398pt too wide) in paragraph at lines 432--433
  [][] 
  []
 
-[17
+[21
 
  <./GANTT.png>] (./DR1.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 9282 strings out of 493747
- 142938 string characters out of 3143546
- 254305 words of memory out of 3000000
- 12168 multiletter control sequences out of 15000+200000
+ 9316 strings out of 493747
+ 143720 string characters out of 3143546
+ 254331 words of memory out of 3000000
+ 12198 multiletter control sequences out of 15000+200000
  105436 words of font info for 236 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 39i,12n,43p,991b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,12n,43p,991b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2010/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2010/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/te
@@ -902,10 +936,10 @@ xlive/2010/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2
 010/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2010/texmf-dis
 t/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on DR1.pdf (17 pages, 3550110 bytes).
+Output written on DR1.pdf (21 pages, 8046685 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 120 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 37437 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 37472 words of extra memory for PDF output out of 42996 (max. 10000000)
 
